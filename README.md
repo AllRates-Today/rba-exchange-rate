@@ -85,10 +85,10 @@ const pair = await getRate('AUD', 'USD', { apiKey: 'art_live_...' });
 {
   bank: 'rba',
   name: 'Reserve Bank of Australia',
-  rate_date: '2026-09-25',   // Reserve Bank of Australia's own publication date
+  rate_date: '2026-10-06',   // Reserve Bank of Australia's own publication date
   source: 'AUD',
   target: 'USD',
-  rate: 0.7019,
+  rate: 0.697,
   rate_type: 'reference',
   derived: false,
   method: 'published',
@@ -113,9 +113,9 @@ console.log(table.rate_date, table.rates.length);
 {
   bank: 'rba',
   name: 'Reserve Bank of Australia',
-  rate_date: '2026-09-25',
+  rate_date: '2026-10-06',
   rates: [
-    { "base": "AUD", "quote": "USD", "type": "reference", "value": 0.7019 },
+    { "base": "AUD", "quote": "USD", "type": "reference", "value": 0.697 },
     // … the rest of the published table (20 currencies vs AUD)
   ],
   disclaimer: '…'
@@ -155,7 +155,7 @@ Paid plans. One resolved rate per publication date — ready for charting, reval
 import { getHistory } from 'rba-exchange-rate';
 
 const series = await getHistory(
-  { source: 'AUD', target: 'USD', from: '2026-01-01', to: '2026-09-25' },
+  { source: 'AUD', target: 'USD', from: '2026-01-01', to: '2026-10-06' },
   { apiKey: 'art_live_...' }
 );
 ```
@@ -168,11 +168,11 @@ const series = await getHistory(
   source: 'AUD',
   target: 'USD',
   from: '2026-01-01',
-  to: '2026-09-25',
+  to: '2026-10-06',
   count: 152,
   rates: [
     // one entry per publication date
-    { date: '2026-09-25', rate: 0.7019, rate_type: 'reference', derived: false, method: 'published' },
+    { date: '2026-10-06', rate: 0.697, rate_type: 'reference', derived: false, method: 'published' },
     // …
   ],
   disclaimer: '…'
