@@ -4,6 +4,8 @@
 [![license](https://img.shields.io/npm/l/rba-exchange-rate.svg)](https://github.com/AllRates-Today/rba-exchange-rate/blob/main/LICENSE)
 [![zero dependencies](https://img.shields.io/badge/dependencies-0-brightgreen.svg)](https://www.npmjs.com/package/rba-exchange-rate)
 [![TypeScript](https://img.shields.io/badge/TypeScript-types%20included-3178C6.svg)](https://www.typescriptlang.org/)
+[![AUD/USD today](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fallratestoday.com%2Fapi%2Fopen%2Fcentral-bank%2Frba%3Fsource%3DAUD%26target%3DUSD&query=%24.rate&label=AUD%2FUSD%20published%20by%20Reserve%20Bank%20of%20Australia&color=0A7E8C&cacheSeconds=3600)](https://allratestoday.com/central-bank-rates-api/rba/)
+[![rate date](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fallratestoday.com%2Fapi%2Fopen%2Fcentral-bank%2Frba%3Fsource%3DAUD%26target%3DUSD&query=%24.rate_date&label=rate%20date&color=555&cacheSeconds=3600)](https://allratestoday.com/central-bank-rates-api/rba/)
 
 **Official Reserve Bank of Australia (Australia) daily exchange rates for Node.js and TypeScript. The published central bank rates behind tax filings, customs valuations, audits, and compliant invoicing — not market estimates, but the numbers Reserve Bank of Australia itself prints, every business day.**
 
@@ -32,6 +34,39 @@ console.log(r.rate_date, r.rates.length); // the central bank's latest published
 ```
 
 The open endpoint serves the *latest* table only and asks for a visible attribution link. The client below uses the keyed API, which adds point-in-time tables, history, and CSV/XML/Excel output.
+
+## 📈 Latest published table
+
+Today's full Reserve Bank of Australia table, straight from the central bank's latest publication. On GitHub it is refreshed by [a daily Action](.github/workflows/daily-table.yml) that reads the keyless endpoint above and commits only when the central bank publishes a new table; the copy on npm is as of the package's publish date.
+
+<!-- daily-table:start -->
+Published **2026-10-09** by Reserve Bank of Australia — 20 rates. Updated 2026-10-09.
+
+| Base | Quote | Type | Rate |
+| --- | --- | --- | ---: |
+| AUD | CAD | reference | 0.9919 |
+| AUD | CHF | reference | 0.5795 |
+| AUD | CNY | reference | 4.6738 |
+| AUD | EUR | reference | 0.6215 |
+| AUD | GBP | reference | 0.527 |
+| AUD | HKD | reference | 5.4768 |
+| AUD | IDR | reference | 12478 |
+| AUD | INR | reference | 67.38 |
+| AUD | JPY | reference | 110.34 |
+| AUD | KRW | reference | 936.24 |
+| AUD | MYR | reference | 2.853 |
+| AUD | NZD | reference | 1.2416 |
+| AUD | PGK | reference | 3.1142 |
+| AUD | PHP | reference | 43.82 |
+| AUD | SGD | reference | 0.8929 |
+| AUD | THB | reference | 23.41 |
+| AUD | TWD | reference | 22.26 |
+| AUD | USD | reference | 0.6979 |
+| AUD | VND | reference | 18053 |
+| AUD | XDR | reference | 0.5162 |
+
+Source: [Official rates published by RBA, served by AllRatesToday](https://allratestoday.com/central-bank-rates-api/rba/). Rates are as printed by the central bank; AllRatesToday is not affiliated with it.
+<!-- daily-table:end -->
 
 ## 🔑 Get your API key
 
