@@ -40,30 +40,30 @@ The open endpoint serves the *latest* table only and asks for a visible attribut
 Today's full Reserve Bank of Australia table, straight from the central bank's latest publication. On GitHub it is refreshed by [a daily Action](.github/workflows/daily-table.yml) that reads the keyless endpoint above and commits only when the central bank publishes a new table; the copy on npm is as of the package's publish date.
 
 <!-- daily-table:start -->
-Published **2026-10-09** by Reserve Bank of Australia — 20 rates. Updated 2026-10-09.
+Published **2026-10-12** by Reserve Bank of Australia — 20 rates. Updated 2026-10-12.
 
 | Base | Quote | Type | Rate |
 | --- | --- | --- | ---: |
-| AUD | CAD | reference | 0.9919 |
+| AUD | CAD | reference | 0.9953 |
 | AUD | CHF | reference | 0.5795 |
-| AUD | CNY | reference | 4.6738 |
-| AUD | EUR | reference | 0.6215 |
+| AUD | CNY | reference | 4.6707 |
+| AUD | EUR | reference | 0.6227 |
 | AUD | GBP | reference | 0.527 |
 | AUD | HKD | reference | 5.4768 |
-| AUD | IDR | reference | 12478 |
-| AUD | INR | reference | 67.38 |
-| AUD | JPY | reference | 110.34 |
-| AUD | KRW | reference | 936.24 |
-| AUD | MYR | reference | 2.853 |
-| AUD | NZD | reference | 1.2416 |
-| AUD | PGK | reference | 3.1142 |
-| AUD | PHP | reference | 43.82 |
-| AUD | SGD | reference | 0.8929 |
+| AUD | IDR | reference | 12492 |
+| AUD | INR | reference | 66.77 |
+| AUD | JPY | reference | 110.51 |
+| AUD | KRW | reference | 931.63 |
+| AUD | MYR | reference | 2.8499 |
+| AUD | NZD | reference | 1.2447 |
+| AUD | PGK | reference | 3.1156 |
+| AUD | PHP | reference | 43.79 |
+| AUD | SGD | reference | 0.8932 |
 | AUD | THB | reference | 23.41 |
-| AUD | TWD | reference | 22.26 |
+| AUD | TWD | reference | 22.28 |
 | AUD | USD | reference | 0.6979 |
-| AUD | VND | reference | 18053 |
-| AUD | XDR | reference | 0.5162 |
+| AUD | VND | reference | 18079 |
+| AUD | XDR | reference | 0.5157 |
 
 Source: [Official rates published by RBA, served by AllRatesToday](https://allratestoday.com/central-bank-rates-api/rba/). Rates are as printed by the central bank; AllRatesToday is not affiliated with it.
 <!-- daily-table:end -->
