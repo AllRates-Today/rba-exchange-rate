@@ -42,30 +42,30 @@ The open endpoint serves the *latest* table only and asks for a visible attribut
 The image is rendered live from the keyless endpoint above, so it follows the central bank's publications on npm and on GitHub alike without a new release. The text copy below is there for search and copy-paste: on GitHub [a daily Action](.github/workflows/daily-table.yml) refreshes it whenever the central bank publishes a new table; on npm it is as of the package's publish date.
 
 <!-- daily-table:start -->
-Published **2026-10-14** by Reserve Bank of Australia — 20 rates. Updated 2026-10-14.
+Published **2026-10-15** by Reserve Bank of Australia — 20 rates. Updated 2026-10-15.
 
 | Base | Quote | Type | Rate |
 | --- | --- | --- | ---: |
-| AUD | CAD | reference | 0.9942 |
-| AUD | CHF | reference | 0.5824 |
-| AUD | CNY | reference | 4.6855 |
-| AUD | EUR | reference | 0.6246 |
-| AUD | GBP | reference | 0.5275 |
-| AUD | HKD | reference | 5.4954 |
-| AUD | IDR | reference | 12524 |
-| AUD | INR | reference | 66.49 |
-| AUD | JPY | reference | 110.74 |
-| AUD | KRW | reference | 935.64 |
-| AUD | MYR | reference | 2.8582 |
-| AUD | NZD | reference | 1.2444 |
-| AUD | PGK | reference | 3.1273 |
-| AUD | PHP | reference | 43.97 |
-| AUD | SGD | reference | 0.8965 |
-| AUD | THB | reference | 23.48 |
-| AUD | TWD | reference | 22.53 |
-| AUD | USD | reference | 0.7002 |
-| AUD | VND | reference | 18131 |
-| AUD | XDR | reference | 0.5177 |
+| AUD | CAD | reference | 0.9882 |
+| AUD | CHF | reference | 0.5773 |
+| AUD | CNY | reference | 4.6546 |
+| AUD | EUR | reference | 0.6201 |
+| AUD | GBP | reference | 0.5252 |
+| AUD | HKD | reference | 5.4577 |
+| AUD | IDR | reference | 12481 |
+| AUD | INR | reference | 66.03 |
+| AUD | JPY | reference | 109.86 |
+| AUD | KRW | reference | 938.4 |
+| AUD | MYR | reference | 2.839 |
+| AUD | NZD | reference | 1.238 |
+| AUD | PGK | reference | 3.1063 |
+| AUD | PHP | reference | 43.89 |
+| AUD | SGD | reference | 0.8918 |
+| AUD | THB | reference | 23.34 |
+| AUD | TWD | reference | 22.52 |
+| AUD | USD | reference | 0.6955 |
+| AUD | VND | reference | 17997 |
+| AUD | XDR | reference | 0.5141 |
 
 Source: [Official rates published by RBA, served by AllRatesToday](https://allratestoday.com/central-bank-rates-api/rba/). Rates are as printed by the central bank; AllRatesToday is not affiliated with it.
 <!-- daily-table:end -->
