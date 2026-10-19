@@ -33,39 +33,42 @@ const r = await fetch('https://allratestoday.com/api/open/central-bank/rba').the
 console.log(r.rate_date, r.rates.length); // the central bank's latest published table, no key
 ```
 
-The open endpoint serves the *latest* table only and asks for a visible attribution link. The client below uses the keyed API, which adds point-in-time tables, history, and CSV/XML/Excel output.
+The open endpoint serves the *latest* table only (JSON by default; add `?format=csv`, `xml` or `xlsx` for a file) and asks for a visible attribution link. The client below uses the keyed API, which adds point-in-time tables and history.
 
 ## 📈 Latest published table
 
 [![Latest Reserve Bank of Australia table](https://allratestoday.com/api/open/central-bank/rba/table.svg)](https://allratestoday.com/central-bank-rates-api/rba/)
 
-The image is rendered live from the keyless endpoint above, so it follows the central bank's publications on npm and on GitHub alike without a new release. The text copy below is there for search and copy-paste: on GitHub [a daily Action](.github/workflows/daily-table.yml) refreshes it whenever the central bank publishes a new table; on npm it is as of the package's publish date.
+The image is rendered live from the keyless endpoint above, so it follows the central bank's publications on npm and on GitHub alike without a new release. The same table as text is folded below for search and copy-paste: on GitHub [a daily Action](.github/workflows/daily-table.yml) refreshes it whenever the central bank publishes a new table; on npm it is as of the package's publish date.
 
 <!-- daily-table:start -->
-Published **2026-10-16** by Reserve Bank of Australia — 20 rates. Updated 2026-10-16.
+<details>
+<summary>Table as text: published 2026-10-19 by Reserve Bank of Australia — 20 rates. Updated 2026-10-19.</summary>
 
 | Base | Quote | Type | Rate |
 | --- | --- | --- | ---: |
-| AUD | CAD | reference | 0.9849 |
-| AUD | CHF | reference | 0.5744 |
-| AUD | CNY | reference | 4.6469 |
-| AUD | EUR | reference | 0.6187 |
-| AUD | GBP | reference | 0.5222 |
-| AUD | HKD | reference | 5.4517 |
-| AUD | IDR | reference | 12536 |
-| AUD | INR | reference | 65.89 |
-| AUD | JPY | reference | 109.67 |
-| AUD | KRW | reference | 932.95 |
-| AUD | MYR | reference | 2.8372 |
-| AUD | NZD | reference | 1.2285 |
-| AUD | PGK | reference | 3.1041 |
-| AUD | PHP | reference | 43.78 |
-| AUD | SGD | reference | 0.8902 |
-| AUD | THB | reference | 23.27 |
-| AUD | TWD | reference | 22.54 |
-| AUD | USD | reference | 0.6947 |
-| AUD | VND | reference | 17970 |
-| AUD | XDR | reference | 0.5131 |
+| AUD | CAD | reference | 0.985 |
+| AUD | CHF | reference | 0.5749 |
+| AUD | CNY | reference | 4.6607 |
+| AUD | EUR | reference | 0.621 |
+| AUD | GBP | reference | 0.5233 |
+| AUD | HKD | reference | 5.4737 |
+| AUD | IDR | reference | 12585 |
+| AUD | INR | reference | 66.12 |
+| AUD | JPY | reference | 110.27 |
+| AUD | KRW | reference | 927.92 |
+| AUD | MYR | reference | 2.8475 |
+| AUD | NZD | reference | 1.2334 |
+| AUD | PGK | reference | 3.118 |
+| AUD | PHP | reference | 43.98 |
+| AUD | SGD | reference | 0.8924 |
+| AUD | THB | reference | 23.39 |
+| AUD | TWD | reference | 22.66 |
+| AUD | USD | reference | 0.6975 |
+| AUD | VND | reference | 18076 |
+| AUD | XDR | reference | 0.5142 |
+
+</details>
 
 Source: [Official rates published by RBA, served by AllRatesToday](https://allratestoday.com/central-bank-rates-api/rba/). Rates are as printed by the central bank; AllRatesToday is not affiliated with it.
 <!-- daily-table:end -->
@@ -338,7 +341,8 @@ Need the whole archive rather than an API call? The same published tables are mi
 - [All central bank sources](https://allratestoday.com/central-bank-rates-api/)
 - [Package docs on the site](https://allratestoday.com/docs/sdk/rba-exchange-rate/) · [ERP integration guides](https://allratestoday.com/docs/integrations/)
 - [API documentation](https://allratestoday.com/docs/#central-bank) · [Interactive reference](https://allratestoday.com/api-reference/) · [Methodology](https://allratestoday.com/official-rates-methodology/)
-- [Register (free)](https://allratestoday.com/register) · [Pricing](https://allratestoday.com/pricing/)
+- [Register (Free)](https://allratestoday.com/register) · [Dashboard](https://allratestoday.com/profile) · [Pricing](https://allratestoday.com/pricing/)
+- [Status](https://allratestoday.com/status)
 - [GitHub](https://github.com/AllRates-Today/rba-exchange-rate)
 
 ## 📜 License
