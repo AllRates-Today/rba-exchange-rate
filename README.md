@@ -47,30 +47,30 @@ The image is rendered live from the keyless endpoint above, so it follows the ce
 
 <!-- daily-table:start -->
 <details>
-<summary>Table as text: published 2026-10-27 by Reserve Bank of Australia — 20 rates. Updated 2026-10-27.</summary>
+<summary>Table as text: published 2026-10-28 by Reserve Bank of Australia — 20 rates. Updated 2026-10-28.</summary>
 
 | Base | Quote | Type | Rate |
 | --- | --- | --- | ---: |
-| AUD | CAD | reference | 0.9841 |
-| AUD | CHF | reference | 0.5811 |
-| AUD | CNY | reference | 4.6817 |
-| AUD | EUR | reference | 0.6286 |
-| AUD | GBP | reference | 0.5264 |
-| AUD | HKD | reference | 5.508 |
-| AUD | IDR | reference | 12736 |
-| AUD | INR | reference | 66.87 |
-| AUD | JPY | reference | 110.64 |
-| AUD | KRW | reference | 929.72 |
-| AUD | MYR | reference | 2.8684 |
-| AUD | NZD | reference | 1.2335 |
-| AUD | PGK | reference | 3.1428 |
-| AUD | PHP | reference | 44.92 |
-| AUD | SGD | reference | 0.8993 |
-| AUD | THB | reference | 23.69 |
+| AUD | CAD | reference | 0.9893 |
+| AUD | CHF | reference | 0.5838 |
+| AUD | CNY | reference | 4.69 |
+| AUD | EUR | reference | 0.6325 |
+| AUD | GBP | reference | 0.5291 |
+| AUD | HKD | reference | 5.5182 |
+| AUD | IDR | reference | 12790 |
+| AUD | INR | reference | 66.92 |
+| AUD | JPY | reference | 111.03 |
+| AUD | KRW | reference | 944.03 |
+| AUD | MYR | reference | 2.8716 |
+| AUD | NZD | reference | 1.2543 |
+| AUD | PGK | reference | 3.15 |
+| AUD | PHP | reference | 45.01 |
+| AUD | SGD | reference | 0.9016 |
+| AUD | THB | reference | 23.79 |
 | AUD | TWD | reference | 22.84 |
-| AUD | USD | reference | 0.7021 |
-| AUD | VND | reference | 18135 |
-| AUD | XDR | reference | 0.5182 |
+| AUD | USD | reference | 0.7034 |
+| AUD | VND | reference | 18177 |
+| AUD | XDR | reference | 0.52 |
 
 </details>
 
