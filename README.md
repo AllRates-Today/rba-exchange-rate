@@ -47,30 +47,30 @@ The image is rendered live from the keyless endpoint above, so it follows the ce
 
 <!-- daily-table:start -->
 <details>
-<summary>Table as text: published 2026-10-28 by Reserve Bank of Australia — 20 rates. Updated 2026-10-28.</summary>
+<summary>Table as text: published 2026-10-29 by Reserve Bank of Australia — 20 rates. Updated 2026-10-29.</summary>
 
 | Base | Quote | Type | Rate |
 | --- | --- | --- | ---: |
-| AUD | CAD | reference | 0.9893 |
-| AUD | CHF | reference | 0.5838 |
-| AUD | CNY | reference | 4.69 |
-| AUD | EUR | reference | 0.6325 |
-| AUD | GBP | reference | 0.5291 |
-| AUD | HKD | reference | 5.5182 |
-| AUD | IDR | reference | 12790 |
-| AUD | INR | reference | 66.92 |
-| AUD | JPY | reference | 111.03 |
-| AUD | KRW | reference | 944.03 |
-| AUD | MYR | reference | 2.8716 |
-| AUD | NZD | reference | 1.2543 |
-| AUD | PGK | reference | 3.15 |
-| AUD | PHP | reference | 45.01 |
-| AUD | SGD | reference | 0.9016 |
-| AUD | THB | reference | 23.79 |
-| AUD | TWD | reference | 22.84 |
-| AUD | USD | reference | 0.7034 |
-| AUD | VND | reference | 18177 |
-| AUD | XDR | reference | 0.52 |
+| AUD | CAD | reference | 0.9863 |
+| AUD | CHF | reference | 0.5844 |
+| AUD | CNY | reference | 4.6984 |
+| AUD | EUR | reference | 0.6329 |
+| AUD | GBP | reference | 0.5295 |
+| AUD | HKD | reference | 5.5334 |
+| AUD | IDR | reference | 12777 |
+| AUD | INR | reference | 67.2 |
+| AUD | JPY | reference | 111.31 |
+| AUD | KRW | reference | 942.25 |
+| AUD | MYR | reference | 2.8663 |
+| AUD | NZD | reference | 1.255 |
+| AUD | PGK | reference | 3.1585 |
+| AUD | PHP | reference | 45.03 |
+| AUD | SGD | reference | 0.9031 |
+| AUD | THB | reference | 23.8 |
+| AUD | TWD | reference | 22.96 |
+| AUD | USD | reference | 0.7053 |
+| AUD | VND | reference | 18221 |
+| AUD | XDR | reference | 0.5218 |
 
 </details>
 
@@ -235,6 +235,7 @@ The Reserve Bank of Australia is Australia's central bank. It publishes official
 
 - Publisher's own page: [Exchange rates statistics](https://www.rba.gov.au/statistics/frequency/exchange-rates.html) · [www.rba.gov.au](https://www.rba.gov.au)
 - Publication: every business day; the exact schedule, freshness status and any current delay are on the [Reserve Bank of Australia rates page](https://allratestoday.com/central-bank-rates-api/rba/)
+- In the API: usually by **06:15 UTC** (measured over the last 11 publications). Schedule a sync at or after that time and retry hourly until `rate_date` moves; every response carries the same figure as `available_by_utc` — see [when to poll](https://allratestoday.com/docs/#when-to-poll)
 - Values are stored unmodified, with the publisher's own `rate_date` on every row — see the [methodology](https://allratestoday.com/official-rates-methodology/)
 
 ## 🧭 Reading the numbers
