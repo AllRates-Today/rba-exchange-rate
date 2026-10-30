@@ -24,53 +24,38 @@
 
 Get a free API key at [allratestoday.com/register](https://allratestoday.com/register) — no credit card required. Latest rates are on every plan, including free.
 
-## ⚡ Try it without a key
-
-The latest Reserve Bank of Australia table is also served keyless, CORS-open and edge-cached, for evaluation, embeds and AI agents:
-
-```bash
-curl "https://allratestoday.com/api/open/central-bank/rba?source=AUD&target=USD"
-```
-
-```js
-const r = await fetch('https://allratestoday.com/api/open/central-bank/rba').then((x) => x.json());
-console.log(r.rate_date, r.rates.length); // the central bank's latest published table, no key
-```
-
-The open endpoint serves the *latest* table only (JSON by default; add `?format=csv`, `xml` or `xlsx` for a file) and is free to use with a visible, followable link where the rates are shown: `<a href="https://allratestoday.com">Exchange rates by AllRatesToday</a>` (terms: <https://allratestoday.com/terms/#attribution>). The client below uses the keyed API, which adds point-in-time tables and history; with a key the link is appreciated, not required.
-
 ## 📈 Latest published table
 
 [![Latest Reserve Bank of Australia table](https://allratestoday.com/api/open/central-bank/rba/table.svg)](https://allratestoday.com/central-bank-rates-api/rba/)
 
-The image is rendered live from the keyless endpoint above, so it follows the central bank's publications on npm and on GitHub alike without a new release. The same table as text is folded below for search and copy-paste: on GitHub [a daily Action](.github/workflows/daily-table.yml) refreshes it whenever the central bank publishes a new table; on npm it is as of the package's publish date.
+The image is rendered live from the keyless endpoint, so it follows the central bank's publications on npm and on GitHub alike without a new release. The same table as text is folded below for search and copy-paste: on GitHub [a daily Action](.github/workflows/daily-table.yml) refreshes it whenever the central bank publishes a new table; on npm it is as of the package's publish date.
 
 <!-- daily-table:start -->
 <details>
-<summary>Table as text: published 2026-10-29 by Reserve Bank of Australia — 20 rates. Updated 2026-10-29.</summary>
+<summary>Table as text: published 2026-10-30 by Reserve Bank of Australia — 20 rates. Updated 2026-10-30.</summary>
 
 | Base | Quote | Type | Rate |
 | --- | --- | --- | ---: |
-| AUD | CAD | reference | 0.9863 |
-| AUD | CHF | reference | 0.5844 |
-| AUD | CNY | reference | 4.6984 |
-| AUD | EUR | reference | 0.6329 |
-| AUD | GBP | reference | 0.5295 |
-| AUD | HKD | reference | 5.5334 |
-| AUD | IDR | reference | 12777 |
-| AUD | INR | reference | 67.2 |
-| AUD | JPY | reference | 111.31 |
-| AUD | KRW | reference | 942.25 |
-| AUD | MYR | reference | 2.8663 |
-| AUD | NZD | reference | 1.255 |
-| AUD | PGK | reference | 3.1585 |
-| AUD | PHP | reference | 45.03 |
-| AUD | SGD | reference | 0.9031 |
-| AUD | THB | reference | 23.8 |
-| AUD | TWD | reference | 22.96 |
-| AUD | USD | reference | 0.7053 |
-| AUD | VND | reference | 18221 |
-| AUD | XDR | reference | 0.5218 |
+| AUD | CAD | reference | 0.9838 |
+| AUD | CHF | reference | 0.5789 |
+| AUD | CNY | reference | 4.6877 |
+| AUD | EUR | reference | 0.6293 |
+| AUD | GBP | reference | 0.5258 |
+| AUD | HKD | reference | 5.5234 |
+| AUD | IDR | reference | 12780 |
+| AUD | INR | reference | 67.05 |
+| AUD | JPY | reference | 110.82 |
+| AUD | KRW | reference | 941.07 |
+| AUD | MYR | reference | 2.853 |
+| AUD | NZD | reference | 1.248 |
+| AUD | PGK | reference | 3.1527 |
+| AUD | PHP | reference | 44.84 |
+| AUD | SGD | reference | 0.8997 |
+| AUD | THB | reference | 23.72 |
+| AUD | TWD | reference | 22.95 |
+| AUD | USD | reference | 0.704 |
+| AUD | VND | reference | 18157 |
+| AUD | XDR | reference | 0.5205 |
 
 </details>
 
